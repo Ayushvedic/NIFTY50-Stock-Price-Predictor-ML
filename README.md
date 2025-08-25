@@ -1,48 +1,42 @@
-# NIFTY50-Stock-Price-Predictor-ML
-Nifty-50 Value Predictor
-This project implements a Linear Regression model from scratch to predict the closing prices of stocks in the NIFTY-50 index based on historical market data. It includes data preprocessing, feature engineering, model training with gradient descent, and accuracy evaluation.
+# Nifty-50 Value Predictor
 
-Project Overview
-Goal: Predict monthly closing prices of NIFTY-50 stocks using key market features.
+This project implements a **Linear Regression model** from scratch to predict the closing prices of stocks in the NIFTY-50 index based on historical market data. It includes data preprocessing, feature engineering, model training with gradient descent, and accuracy evaluation.
 
-Data: Historical stock data with features like Open, High, Low, Volume, VWAP, and others.
+## Project Overview
 
-Method: Custom-built Linear Regression model optimized via gradient descent.
+- **Goal:** Predict monthly closing prices of NIFTY-50 stocks using key market features.
+- **Data:** Historical stock data with features like Open, High, Low, Volume, VWAP, and others.
+- **Method:** Custom-built Linear Regression model optimized via gradient descent.
+- **Evaluation:** Model performance measured using Mean Squared Error (MSE) and R-squared (R²).
 
-Evaluation: Model performance measured using Mean Squared Error (MSE) and R-squared (R²).
+## Features
 
-Features
-Robust data cleaning and preprocessing, handling missing and invalid values.
+- Robust **data cleaning and preprocessing**, handling missing and invalid values.
+- Feature normalization using **standard scaling** to improve training stability.
+- Manual implementation of **gradient descent** for weight and bias optimization.
+- Calculation of **model accuracy** with R² score to assess prediction quality.
+- Model persistence using Python's **pickle** module for saving and loading.
 
-Feature normalization using standard scaling to improve training stability.
+## How to Use
 
-Manual implementation of gradient descent for weight and bias optimization.
+1. Prepare your data in CSV format with necessary columns.
+2. Run the training script to fit the model on your data.
+3. Evaluate the trained model with testing data.
+4. Save the trained model for later use and reload it as needed.
 
-Calculation of model accuracy with R² score to assess prediction quality.
+## Technologies Used
 
-Model persistence using Python's pickle module for saving and loading.
+- Python (NumPy, Pandas)
+- Custom linear algebra and optimization algorithms
+- Data preprocessing techniques
 
-How to Use
-Prepare your data in CSV format with necessary columns.
+## Future Improvements
 
-Run the training script to fit the model on your data.
+- Extend model to support other regression algorithms.
+- Add a user-friendly interface (e.g., web app or CLI for predictions).
+- Incorporate additional financial indicators and feature selection.
+- Improve error handling and input validations.
 
-Evaluate the trained model with testing data.
+## License
 
-Save the trained model for later use and reload it as needed.
-
-Technologies Used
-Python (NumPy, Pandas)
-
-Custom linear algebra and optimization algorithms
-
-Data preprocessing techniques
-
-Future Improvements
-Extend model to support other regression algorithms.
-
-Add a user-friendly interface (e.g., web app or CLI for predictions).
-
-Incorporate additional financial indicators and feature selection.
-
-Improve error handling and input validations.
+This project is open-source and free to use under the MIT License.
