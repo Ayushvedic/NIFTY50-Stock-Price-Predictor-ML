@@ -37,6 +37,3 @@ This project implements a **Linear Regression model** from scratch to predict th
 - Incorporate additional financial indicators and feature selection.
 - Improve error handling and input validations.
 
-## License
-
-This project is open-source and free to use under the MIT License.
